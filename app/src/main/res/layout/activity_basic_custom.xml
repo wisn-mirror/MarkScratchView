@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.clock.view.activity.BasicCustomActivity">
+
+    <Button
+        android:id="@+id/btn_custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom View" />
+
+    <Button
+        android:id="@+id/btn_custom_viewgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom ViewGroup" />
+
+    <Button
+        android:id="@+id/btn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple TextView" />
+
+    <Button
+        android:id="@+id/btn_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canvas" />
+
+    <Button
+        android:id="@+id/btn_pdx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PorterDuffXfermode" />
+
+    <Button
+        android:id="@+id/btn_shader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shader" />
+
+    <Button
+        android:id="@+id/btn_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Path" />
+</LinearLayout>
