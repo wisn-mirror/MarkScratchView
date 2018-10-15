@@ -160,8 +160,9 @@ public class ScratchView extends View {
 
         mErasePath = new Path();
 
-        ViewConfiguration viewConfiguration = ViewConfiguration.get(getContext());
-        mTouchSlop = viewConfiguration.getScaledTouchSlop();
+//        ViewConfiguration viewConfiguration = ViewConfiguration.get(getContext());
+//        mTouchSlop = viewConfiguration.getScaledTouchSlop();
+        mTouchSlop=0;
 
     }
 
@@ -232,6 +233,12 @@ public class ScratchView extends View {
                 break;
         }
         return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        getParent().requestDisallowInterceptTouchEvent(true);
+        return super.dispatchTouchEvent(ev);
     }
 
     @Override
